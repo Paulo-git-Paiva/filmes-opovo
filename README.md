@@ -1,50 +1,56 @@
-# Welcome to your Expo app 👋
+# 🎬 Filmes O POVO - App Mobile
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+O app permite autenticação de usuários, listagem de filmes populares via TMDB, visualização de detalhes e gerenciamento de favoritos com persistência.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Funcionalidades
 
-   ```bash
-   npm install
-   ```
+- Login e cadastro com Firebase Auth
+- Listagem de filmes (TMDB API)
+- Tela de detalhes do filme
+- Favoritar / remover favoritos
+- Persistência de favoritos (mesmo após logout/login)
+- Separação por categorias (Populares, Em alta, etc.)
+- Navegação com Expo Router
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 📱 Tecnologias utilizadas
 
-In the output, you'll find options to open the app in a
+- React Native (Expo)
+- Expo Router
+- Firebase Authentication
+- AsyncStorage
+- TMDB API
+- React Context API
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🔐 Autenticação
 
-## Get a fresh project
+O login é feito via Firebase. O estado do usuário é persistido automaticamente.
 
-When you're ready, run:
+---
+
+## 🎥 API de Filmes
+
+Utiliza a API do The Movie Database (TMDB):
+
+https://www.themoviedb.org/documentation/api
+
+---
+
+## 📲 Build de preview (Android)
+
+O aplicativo pode ser baixado e testado diretamente em dispositivos Android através do build gerado com Expo EAS:
+
+https://expo.dev/accounts/paulo.paiva/projects/filmes-povo/builds/f2161b25-e55c-45c6-b589-a2aa4cca82a3
+
+---
+
+## 📦 Instalação do projeto (desenvolvimento)
 
 ```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+npm install
+npx expo start
